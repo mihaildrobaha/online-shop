@@ -1,0 +1,48 @@
+<mat-card *ngIf="product" class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ product.title }}</mat-card-title>
+  </mat-card-header>
+  <img
+    class="image"
+    mat-card-image
+    [src]="product.image"
+    [alt]="product.title"
+  />
+  <div>
+    <mat-card-content>
+      <p>Category: {{ product.category | titlecase }}</p>
+      <p>Price: {{ product.price | currency : "USD" }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        *ngIf="!product.isAdded; else added"
+        class="button"
+        mat-raised-button
+        color="accent"
+        (click)="addToBasket()"
+      >
+        Add to Cart
+      </button>
+
+      <ng-template #added>
+        <button
+          class="button"
+          mat-raised-button
+          color="warn"
+          (click)="removeFromBasket()"
+        >
+          Remove from Cart
+        </button>
+      </ng-template>
+
+      <button
+        class="button"
+        mat-raised-button
+        color="accent"
+        [routerLink]="['/product', product.id]"
+      >
+        Details
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>

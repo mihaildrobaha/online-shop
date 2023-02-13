@@ -1,0 +1,35 @@
+<div class="cards-container">
+  <mat-card *ngIf="product" class="example-card-title">
+    <mat-card-header>
+      <mat-card-title>{{ product.title }}</mat-card-title>
+    </mat-card-header>
+    <img
+      class="image"
+      mat-card-image
+      [src]="product.image"
+      [alt]="product.title"
+    />
+    <p class="price">Price: {{ product.price | currency : "USD" }}</p>
+    <mat-card-actions>
+      <button
+        class="button"
+        mat-raised-button
+        color="warn"
+        (click)="removeFromCart(product.id)"
+      >
+        Remove from Cart
+      </button>
+    </mat-card-actions>
+    <mat-card-actions>
+      <button
+        mat-button
+        class="button"
+        mat-raised-button
+        color="accent"
+        (click)="showDetails(product.id)"
+      >
+        Show Details
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

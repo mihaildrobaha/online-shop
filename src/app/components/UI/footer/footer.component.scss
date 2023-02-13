@@ -1,0 +1,21 @@
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.footer {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.mat-toolbar {
+  background: #0a7e78;
+}

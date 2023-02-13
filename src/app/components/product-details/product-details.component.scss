@@ -1,0 +1,59 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .example-card-title {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 500px;
+
+    mat-card-header {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .image {
+      display: flex;
+      height: 365px;
+      padding: 5px;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    mat-card-actions {
+      justify-content: center;
+    }
+  }
+
+  .example-card-details {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 500px;
+
+    mat-card-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .description {
+      height: 250px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+
+  .button-to-cart {
+    background-color: rgb(53, 208, 156);
+  }
+}

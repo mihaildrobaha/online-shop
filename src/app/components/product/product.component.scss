@@ -1,0 +1,23 @@
+.example-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 300px;
+
+  .button {
+    margin-right: 5px;
+  }
+
+  mat-card-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+    height: 365px;
+    padding: 5px;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}

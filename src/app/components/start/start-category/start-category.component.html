@@ -1,0 +1,6 @@
+<div class="card" *ngIf="category">
+  <div class="content">
+    <div class="front">{{ category | titlecase }}</div>
+    <div class="back" [routerLink]="['/products', category]">MORE</div>
+  </div>
+</div>

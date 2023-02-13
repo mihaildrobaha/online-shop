@@ -1,0 +1,26 @@
+.cart-header {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0px;
+  padding: 15px;
+  border-radius: 15px;
+  color: #03446a;
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price {
+  display: flex;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 15px;
+  border-radius: 15px;
+  color: #03446a;
+}

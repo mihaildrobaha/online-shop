@@ -1,0 +1,15 @@
+<div class="main-page">
+  <h1 class="header">Welcome to E-Shop!</h1>
+  <div class="card">
+    <div class="content">
+      <div class="front" routerLink="products">All Products</div>
+    </div>
+  </div>
+</div>
+
+<div class="start-category">
+  <app-start-category
+    *ngFor="let category of categories | async"
+    [category]="category"
+  ></app-start-category>
+</div>

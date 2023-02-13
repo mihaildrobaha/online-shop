@@ -1,0 +1,11 @@
+<h2 *ngIf="products" class="header">
+  {{ products[0].category | titlecase }}
+</h2>
+<div class="container">
+  <app-product
+    *ngFor="let product of products"
+    [product]="product"
+    (onAddToBasket)="addToCart($event)"
+    (onRemoveToBasket)="removeFromCart($event)"
+  ></app-product>
+</div>

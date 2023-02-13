@@ -1,0 +1,13 @@
+<div *ngIf="product && product.id === id" class="card-details">
+  <h2 mat-dialog-title>Product Description</h2>
+  <div mat-dialog-content>
+    <p>Category: {{ product.category | titlecase }}</p>
+    <p>Rating: {{ product.rating.rate }}</p>
+    <p>Count: {{ product.rating.count }}</p>
+    <p>Price: {{ product.price | currency }}</p>
+    <h3 class="description">{{ product.description | titlecase }}</h3>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>

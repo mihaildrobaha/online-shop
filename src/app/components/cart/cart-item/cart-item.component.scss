@@ -1,0 +1,40 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+
+  .example-card-title {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    width: 300px;
+    height: 500px;
+
+    mat-card-header {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .image {
+      display: flex;
+      height: 365px;
+      padding: 5px;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .price {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    mat-card-actions {
+      justify-content: center;
+    }
+  }
+}

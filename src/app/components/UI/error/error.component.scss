@@ -1,0 +1,17 @@
+.error-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #d73838;
+  border-radius: 10px;
+  align-items: center;
+
+  .error-message {
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}

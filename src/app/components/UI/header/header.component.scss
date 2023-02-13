@@ -1,0 +1,51 @@
+.heder-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.material-icons {
+  font-size: 32px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-weight {
+  font-weight: bold;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.home-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  font-size: 36px;
+}
+
+.menu {
+  font-size: 20px;
+}
+
+.mat-toolbar {
+  background-color: #0a7e78;
+}
+
+::ng-deep .mdc-menu-surface {
+  background-color: #0b6a71;
+}

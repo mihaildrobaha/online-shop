@@ -1,0 +1,19 @@
+<h2 *ngIf="!cartProducts.length; else cart" class="cart-header">
+  Your Shopping Cart Is Empty
+</h2>
+<ng-template #cart>
+  <h2 class="cart-header">Your Shopping Cart</h2>
+</ng-template>
+
+<div class="container">
+  <app-cart-item
+    *ngFor="let product of cartProducts"
+    [product]="product"
+    (onRemoveFromCart)="removeFromCart($event)"
+    (onShowDetails)="showDetails($event)"
+  ></app-cart-item>
+</div>
+
+<h2 *ngIf="cartProducts.length" class="price">
+  Total Price: {{ checkTotalPrice() | currency }}
+</h2>

@@ -1,0 +1,23 @@
+.header {
+  font-size: 24px;
+  margin: 10px 0px;
+  text-align: center;
+  color: #03446a;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.spinner {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

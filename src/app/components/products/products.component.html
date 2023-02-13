@@ -1,0 +1,13 @@
+<div *ngIf="error">
+  <app-error [error]="error" (onHideError)="hideError($event)"></app-error>
+</div>
+<div *ngIf="loading || error" class="spinner"><mat-spinner></mat-spinner></div>
+<h2 *ngIf="!loading" class="header">All Products</h2>
+<div class="container">
+  <app-product
+    *ngFor="let product of products$ | async"
+    [product]="product"
+    (onAddToBasket)="addToCart($event)"
+    (onRemoveToBasket)="removeFromCart($event)"
+  ></app-product>
+</div>

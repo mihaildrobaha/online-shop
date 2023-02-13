@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="heder-toolbar">
+  <mat-toolbar-row>
+    <div class="header" routerLink="">
+      <mat-icon class="home-icon">home</mat-icon>
+      <h1 class="header no-select header-weight">E-shop</h1>
+    </div>
+    <span class="example-spacer"></span>
+    <div class="nav">
+      <button mat-button [matMenuTriggerFor]="animals" class="menu">
+        Menu <span class="material-icons"> list </span>
+      </button>
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item routerLink="">Home Page</button>
+        <button mat-menu-item routerLink="cart">Shopping Cart</button>
+        <button mat-menu-item [matMenuTriggerFor]="invertebrates">
+          Product List
+        </button>
+      </mat-menu>
+      <mat-menu #invertebrates="matMenu">
+        <button mat-menu-item routerLink="products">All Products</button>
+        <button
+          *ngFor="let category of categories$ | async"
+          mat-menu-item
+          [routerLink]="['/products', category]"
+        >
+          {{ category | titlecase }}
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
