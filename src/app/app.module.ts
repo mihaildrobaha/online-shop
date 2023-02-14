@@ -20,12 +20,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatBadgeModule } from '@angular/material/badge';
 import { CategoryComponent } from './components/products/category/category.component';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 import { DialogCartComponent } from './components/cart/dialog-cart/dialog-cart.component';
 import { DialogCartItemComponent } from './components/cart/dialog-cart/dialog-cart-item/dialog-cart-item.component';
 import { ErrorComponent } from './components/UI/error/error.component';
 import { StartCategoryComponent } from './components/start/start-category/start-category.component';
+import { BadgeComponent } from './components/UI/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { StartCategoryComponent } from './components/start/start-category/start-
     DialogCartItemComponent,
     ErrorComponent,
     StartCategoryComponent,
+    BadgeComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { StartCategoryComponent } from './components/start/start-category/start-
     MatProgressSpinnerModule,
     MatMenuModule,
     MatDialogModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,27 @@
+.badge {
+  position: fixed;
+  top: 90px;
+  right: 35px;
+  z-index: 5;
+  cursor: pointer;
+
+  mat-icon {
+    font-size: 34px;
+  }
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 515px) {
+  .badge {
+    top: 15px;
+    right: 125px;
+
+    mat-icon {
+      color: white;
+      font-size: 30px;
+    }
+  }
+}
